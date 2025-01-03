@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <article class="card-container">
+      <section class="image-container">
+        <img src="./assets/images/drawers.jpg" alt="Love will keep us alive" />
+      </section>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+      <section class="info-container">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
 
-  Michelle Appleton
-  28 Jun 2020
+        <div class="author">
+          <img
+            src="./assets/images/avatar-michelle.jpg"
+            alt="Michelle Appleton, author"
+          />
+          <p class="name">Michelle Appleton</p>
+          <p class="date">28 Jun 2020</p>
 
-  Share
-  
-  <div class="attribution">
+          <button>Share</button>
+        </div>
+      </section>
+    </article>
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    Coded by <a href="https://www.instagram.com/kly.privvv/profilecard/?igsh=cDlqenY1dHY4ZWF3" target="_blank">Vendy</a>.
+  </div> -->
+  </body>
 </html>
