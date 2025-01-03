@@ -1,12 +1,34 @@
 let button = document.querySelector("button");
+let svg = document.querySelectorAll("path");
+let section = document.querySelector(".share-container");
+p = "";
 
-function disparaitre() {
-  if (button.style.display == "inline" || button.style.display == "block") {
-    button.style.display = "none";
-  } else {
-    button.style.display = "inline";
+button.addEventListener("mouseover", () => {
+  // for (x = 0; x < svg.length; x++) {
+
+  button.style.backgroundColor = "hsl(214, 17%, 51%)";
+  for (x = 0; x < svg.length; x++) {
+    svg[x].style.fill = "#FFF";
   }
-}
+  button.style.color = "hsl(210, 46%, 95%)";
+  section.style.backgroundColor = "hsl(214, 17%, 51%)";
+});
+
+button.addEventListener("mouseleave", () => {
+  button.style.backgroundColor = "hsl(210, 46%, 95%)";
+  for (index = 0; index < svg.length; index++) {
+    svg[index].style.fill = "#6e8098";
+  }
+  button.style.color = "hsl(214, 17%, 51%)";
+});
+
+// function disparaitre() {
+//   if (button.style.display == "inline" || button.style.display == "block") {
+//     button.style.display = "none";
+//   } else {
+//     button.style.display = "inline";
+//   }
+// }
 
 // setInterval(disparaitre, 500);
 
